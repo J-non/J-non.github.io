@@ -12,7 +12,7 @@
 <body>
     <div id="wrap">
 
-        <header class="header">
+        <header class="header z-10">
             <div class="header-navigation-wrap">
 
                 <a href="#main" class="header-title">JongSeok Lee's Portfolio</a>
@@ -59,7 +59,7 @@
         <!-- 내 정보 -->
         <section id="aboutMe">
 
-            <div class="about-me-header">
+            <div class="about-me-header w-[1200px] mx-auto">
                 ABOUT ME
             </div>
 
@@ -141,18 +141,54 @@
         <!-- 기술 스택 -->
         <section id="techStack">
 
-            <div class="tech-stack-header">
+            <div class="tech-stack-header w-[1200px] mx-auto">
                 TECH STACK
             </div>
 
-            <!-- 카테고리 박스 만들까? 아니면 카텍리 버튼 네브바 만들어서 클릭시에 보이기? -->
-            <!-- <div>
+            <!-- 카테고리 네브바 -->
+            <div class="w-[1200px] mx-auto">
+                <div
+                    class="w-[800px] mx-auto flex rounded-full shadow-[0_0_.5rem_0_rgba(68,68,68,.4)] overflow-hidden p-2">
 
-            </div> -->
+                    <button class="tech-stack-category-btn w-[160px] text-xl py-2 relative on">
+                        All
+                        <span
+                            class="tech-stack-category-selected on bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                    </button>
 
-            <!-- 언어 -->
-            <div class="w-[1200px] mx-auto pb-8 pl-2 text-2xl font-bold">Language</div>
-            <div class="tech-stack-content-wrap">
+                    <button
+                        class="tech-stack-category-btn w-[160px] text-xl py-2 relative  text-gray-400 hover:text-gray-950">
+                        Language
+                        <span
+                            class="tech-stack-category-selected hidden bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                    </button>
+
+                    <button
+                        class="tech-stack-category-btn w-[160px] text-xl py-2 relative  text-gray-400 hover:text-gray-950">
+                        FrontEnd
+                        <span
+                            class="tech-stack-category-selected hidden bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                    </button>
+
+                    <button
+                        class="tech-stack-category-btn w-[160px] text-xl py-2 relative  text-gray-400 hover:text-gray-950">
+                        BackEnd
+                        <span
+                            class="tech-stack-category-selected hidden bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                    </button>
+
+                    <button
+                        class="tech-stack-category-btn w-[160px] text-xl py-2 relative  text-gray-400 hover:text-gray-950">
+                        Depoly
+                        <span
+                            class="tech-stack-category-selected hidden bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- 전체 -->
+            <div id="techStackAll" class="tech-stack-content-wrap on">
 
                 <!-- JavaScript -->
                 <div class="tech-stack-content">
@@ -161,8 +197,154 @@
                             alt="html5">
                     </div>
                     <div class="tech-stack-description">
-                        ES6 문법을 활용한 가독성과 효율성이 높은 코드 작성이 가능합니다. <br>
-                        실행 컨텍스트와 이벤트 루프에 대해 이해하고 있습니다.
+                        ES6 문법을 활용해 가독성과 효율성이 높은 코드 작성이 가능하며, 실행 컨텍스트와 이벤트 루프에 대해 이해하고 있습니다.
+                    </div>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        타입스크립트의 타입 추론 기능을 활용해 개발 중 발생할 수 있는 타입 오류를 사전에 방지했습니다.
+                    </div>
+                </div>
+
+                <!-- HTML -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/HTML-D0654C?style=for-the-badge&logo=HTML5&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        Semantic 태그를 활용하여 웹 페이지를 목적에 맞게 설계할 수 있으며, 이를 통해 효율적인 구조화와 접근성을 향상시킬 수 있습니다.
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        스타일 상속과 선택자 우선순위에 대한 이해를 바탕으로 스타일을 정확하고 빠르게 지정할 수 있습니다.
+                    </div>
+                </div>
+
+                <!-- React -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        React의 생명주기를 이해하고 이를 기반으로 클래스 컴포넌트를 구현할 수 있으며, 함수형 컴포넌트로 구현한 경험도 보유하고 있습니다.
+                    </div>
+                </div>
+
+                <!-- Next.js -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        Next.js의 클라이언트 컴포넌트와 서버 컴포넌트의 차이점을 이해하고, 이를 활용한 구현 경험이 있습니다.
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        Tailwind CSS의 미리 정의된 유틸리티 클래스를 사용하여 생산적으로 스타일링을 구현할 수 있습니다.
+                    </div>
+                </div>
+
+                <!-- Node.js -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        Node.js의 런타임 환경을 이해하고 있으며, 논블로킹 I/O 작업이 브라우저와 달리 libuv 라이브러리에서 처리된다는 점을 알고 있습니다.
+                    </div>
+                </div>
+
+                <!-- NestJS -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        NestJS에서 인스턴스 생성 시 IOC 컨테이너가 의존성 주입을 관리하며, 이를 통해 모듈 간의 결합도를 낮추고 유지보수성을 높인다는 것을 이해하고 있습니다.
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/mysql-4879A1?style=for-the-badge&logo=mysql&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        관계형 데이터베이스의 특성을 활용하여 정규화를 통해 데이터 중복을 최소화하고 데이터의 무결성을 유지할 수 있습니다.
+                    </div>
+                </div>
+
+                <!-- Axios -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        Axios는 운영 환경에 따라 브라우저에서 XMLHttpRequest 객체 또는 Node.js의 HTTP API를 사용해 요청을 처리하는 방식에 대해 이해하고 있습니다.
+                    </div>
+                </div>
+
+                <!-- Amazon RDS -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/amazon rds-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        Amazon RDS를 사용하여 MySQL DB 인스턴스를 생성하고, 보안, 백업, 성능 최적화 설정을 통해 안정적인 데이터베이스 환경을 구축한 경험이 있습니다.
+                    </div>
+                </div>
+
+                <!-- Amazon EC2 -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/amazon ec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        Amazon EC2 인스턴스를 생성하고, 필요한 소프트웨어와 환경 설정을 통해 프로젝트를 배포한 경험이 있습니다.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 언어 -->
+            <div id="techStackLanguage" class="tech-stack-content-wrap hidden">
+                <!-- JavaScript -->
+                <div class="tech-stack-content">
+                    <div class="tech-stack">
+                        <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                            alt="html5">
+                    </div>
+                    <div class="tech-stack-description">
+                        ES6 문법을 활용해 가독성과 효율성이 높은 코드 작성이 가능하며, 실행 컨텍스트와 이벤트 루프에 대해 이해하고 있습니다.
                     </div>
                 </div>
 
@@ -180,8 +362,7 @@
             </div>
 
             <!-- 프론트엔드 -->
-            <div class="w-[1200px] mx-auto py-8 pl-2 text-2xl font-bold">FrontEnd</div>
-            <div class="tech-stack-content-wrap">
+            <div id="techStackFrontEnd" class="tech-stack-content-wrap hidden">
 
                 <!-- HTML -->
                 <div class="tech-stack-content">
@@ -252,8 +433,7 @@
             </div>
 
             <!-- 백엔드 -->
-            <div class="w-[1200px] mx-auto py-8 pl-2 text-2xl font-bold">BackEnd</div>
-            <div class="tech-stack-content-wrap">
+            <div id="techStackBackEnd" class="tech-stack-content-wrap hidden">
                 <!-- Node.js -->
                 <div class="tech-stack-content">
                     <div class="tech-stack">
@@ -301,8 +481,7 @@
             </div>
 
             <!-- Deploy 배포 -->
-            <div class="w-[1200px] mx-auto py-8 pl-2 text-2xl font-bold">Deploy</div>
-            <div class="tech-stack-content-wrap">
+            <div id="techStackDepoly" class="tech-stack-content-wrap hidden">
                 <!-- Amazon RDS -->
                 <div class="tech-stack-content">
                     <div class="tech-stack">
@@ -317,7 +496,7 @@
                 <!-- Amazon EC2 -->
                 <div class="tech-stack-content">
                     <div class="tech-stack">
-                        <img src="https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"
+                        <img src="https://img.shields.io/badge/amazon ec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"
                             alt="html5">
                     </div>
                     <div class="tech-stack-description">
@@ -327,12 +506,13 @@
 
             </div>
 
+
         </section>
 
         <!-- 프로젝트 -->
         <section id="projects">
 
-            <div class="projects-header">
+            <div class="projects-header w-[1200px] mx-auto">
                 PROJECTS
             </div>
 
@@ -390,9 +570,9 @@
                             <span class="block py-2"></span>
                             <span class="block">복용 기록 탭</span>
                             <span class="block">- 복용 기록 달력 표시</span>
-                            <span class="block">- 사용자가 달력에서 날짜를 선택하면 해당 날짜의 복용 기록을 필터링해 조회하도록 구현. 특정 날짜의 알람 정보를 카테고리별로
-                                나누어 보여주어 필요한 정보를</span>
-                            찾을 수 있도록 구성.</span>
+                            <span class="block">
+                                - 사용자가 달력에서 날짜를 선택하면 해당 날짜의 복용 기록을 필터링해 조회하도록 구현. 특정 날짜의 알람 정보를 카테고리별로
+                                나누어 보여주어 필요한 정보를 찾을 수 있도록 구성.</span>
                             <span class="block">- 조회된 알람 목록에서 복용 여부를 체크하거나 수정할 수 있는 기능을 제공. 사용자의 수정 요청을 받아 백엔드 서버에 데이터가
                                 즉시 업데이트되도록 하고, 이를 통해 데이터가 일관성 있게 관리되도록 설계.</span>
                             <span class="block py-2"></span>
@@ -543,5 +723,6 @@
         </footer>
     </div>
 </body>
+<script src="./public/js/index.js"></script>
 
 </html>
